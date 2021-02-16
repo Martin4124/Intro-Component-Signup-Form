@@ -1,0 +1,50 @@
+@import "./utilities";
+@import "./form";
+body {
+  background: url("/images/bg-intro-mobile.png"), $color-primary-red;
+  font-family: $ff-primary;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding: 4rem 1rem;
+  .button-dark {
+    background-color: $color-accent-blue;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem 4rem;
+    border-radius: 6px;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    padding: 0;
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: url("/images/bg-intro-desktop.png"), $color-primary-red;
+    .header {
+      text-align: left;
+      h1 {
+        font-size: 3rem;
+        text-align: left;
+      }
+    }
+    .button-dark {
+      max-width: 600px;
+      padding: 1rem 4rem;
+      font-size: 1rem;
+    }
+  }
+}

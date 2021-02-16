@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+form {
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+form input {
+  width: 90%;
+  padding: 0.7rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+form input::placeholder {
+  font-weight: 700;
+  color: #3e3c49;
+  opacity: 0.6;
+}
+
+form button {
+  background-color: #38cc8c;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 4rem;
+  border-radius: 6px;
+  line-height: 1.5;
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+form button:active, form button:focus {
+  opacity: 0.8;
+}
+
+form p {
+  color: #b9b6d3;
+  font-size: 0.8rem;
+  padding: 0.6rem;
+}
+
+form p b {
+  color: #ff7a7a;
+}
+
+form .form__error-text {
+  color: #ff7a7a;
+  font-weight: 700;
+  padding-bottom: 0.8rem;
+  font-size: 0.8rem;
+}
+
+form .form__error-input {
+  border: 2px solid #ff7a7a;
+  background-image: url("/images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 97%, center;
+}
+
+form .form__error-input::placeholder {
+  color: #ff7a7a;
+}
+
+form .form__succes-input {
+  border: 2px solid #38cc8c;
+  background-image: url("/images/check-circle-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 97%, center;
+  background-size: 25px;
+}
+
+form .form__succes-input::placeholder {
+  color: #38cc8c;
+}
+
+@media only screen and (min-width: 1000px) {
+  form {
+    padding: 2rem;
+  }
+  form input {
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+body {
+  background: url("/images/bg-intro-mobile.png"), #ff7a7a;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding: 4rem 1rem;
+}
+
+body .button-dark {
+  background-color: #6055a5;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 4rem;
+  border-radius: 6px;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    padding: 0;
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: url("/images/bg-intro-desktop.png"), #ff7a7a;
+  }
+  body .header {
+    text-align: left;
+  }
+  body .header h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+  body .button-dark {
+    max-width: 600px;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

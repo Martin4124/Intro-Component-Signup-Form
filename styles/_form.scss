@@ -1,0 +1,77 @@
+form {
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 6px;
+  padding: 1rem;
+  input {
+    width: 90%;
+    padding: 0.7rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    &::placeholder {
+      font-weight: $fw-bold;
+      color: $color-dark-blue;
+      opacity: 0.6;
+    }
+  }
+  button {
+    background-color: $color-primary-green;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: $fw-semi-bold;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem 4rem;
+    border-radius: 6px;
+    line-height: 1.5;
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    &:active,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+  p {
+    color: $color-grayish-blue;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+    b {
+      color: $color-primary-red;
+    }
+  }
+  .form__error-text {
+    color: $color-primary-red;
+    font-weight: $fw-bold;
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+  }
+  .form__error-input {
+    border: 2px solid $color-primary-red;
+    background-image: url("/images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: 97%, center;
+    &::placeholder {
+      color: $color-primary-red;
+    }
+  }
+  .form__succes-input {
+    border: 2px solid $color-primary-green;
+    background-image: url("/images/check-circle-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 97%, center;
+    background-size: 25px;
+    &::placeholder {
+      color: $color-primary-green;
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  form {
+    padding: 2rem;
+    input {
+      padding: 0.8rem 1.2rem;
+    }
+  }
+}
